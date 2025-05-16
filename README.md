@@ -1,1 +1,38 @@
-# 3DKernelVisualizer
+# Feature Visualization in 3D Convolutional Neural Networks
+
+Code will release soon
+
+
+## Results  
+Loading may take some time...
+
+
+#### Visualization of I3D 
+
+| layer   | example 1                                                                                                                        | example 2                                                                                                                        | example 3                                                                                                                        |
+|---------|----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| stage 1 | ![I3D stage 1 kernel 0 static](results/i3d/i3d_stage1_f0_static.png )<br/>![I3D stage 1 kernel 0](results/i3d/i3d_stage1_f0.gif) | ![I3D stage 1 kernel 1 static](results/i3d/i3d_stage1_f1_static.png) <br/>![I3D stage 1 kernel 1](results/i3d/i3d_stage1_f1.gif) | ![I3D stage 1 kernel 8 static](results/i3d/i3d_stage1_f8_static.png) <br/>![I3D stage 1 kernel 8](results/i3d/i3d_stage1_f8.gif) |
+| stage 2 | ![I3D stage 2 kernel 2 static](results/i3d/i3d_stage2_f2_static.png)<br/>![I3D stage 2 kernel 2](results/i3d/i3d_stage2_f2.gif)  | ![I3D stage 2 kernel 3 static](results/i3d/i3d_stage2_f3_static.png)<br/>![I3D stage 2 kernel 3](results/i3d/i3d_stage2_f3.gif)  | ![I3D stage 2 kernel 8 static](results/i3d/i3d_stage2_f8_static.png)<br/>![I3D stage 2 kernel 8](results/i3d/i3d_stage2_f8.gif)  |
+| stage 3 | ![I3D stage 3 kernel 0 static](results/i3d/i3d_stage3_f0_static.png)<br/>![I3D stage 3 kernel 0](results/i3d/i3d_stage3_f0.gif)  | ![I3D stage 3 kernel 1 static](results/i3d/i3d_stage3_f1_static.png)<br/>![I3D stage 3 kernel 1](results/i3d/i3d_stage3_f1.gif)  | ![I3D stage 3 kernel 8 static](results/i3d/i3d_stage3_f8_static.png)<br/>![I3D stage 3 kernel 8](results/i3d/i3d_stage3_f8.gif)  |
+| stage 4 | ![I3D stage 4 kernel 0 static](results/i3d/i3d_stage4_f0_static.png)<br/>![I3D stage 4 kernel 0](results/i3d/i3d_stage4_f0.gif)  | ![I3D stage 4 kernel 1 static](results/i3d/i3d_stage4_f1_static.png)<br/>![I3D stage 4 kernel 1](results/i3d/i3d_stage4_f1.gif)  | ![I3D stage 4 kernel 8 static](results/i3d/i3d_stage4_f8_static.png)<br/>![I3D stage 4 kernel 8](results/i3d/i3d_stage4_f8.gif)  |
+| stage 5 | ![I3D stage 5 kernel 0 static](results/i3d/i3d_stage5_f0_static.png)<br/>![I3D stage 5 kernel 0](results/i3d/i3d_stage5_f0.gif)  | ![I3D stage 5 kernel 1 static](results/i3d/i3d_stage5_f1_static.png)<br/>![I3D stage 5 kernel 1](results/i3d/i3d_stage5_f1.gif)  | ![I3D stage 5 kernel 4 static](results/i3d/i3d_stage5_f4_static.png)<br/>![I3D stage 5 kernel 4](results/i3d/i3d_stage5_f4.gif)  |
+
+
+#### Visualization of C3D 
+
+| layer   | example 1                                                                                                                     | example 2                                                                                                                     | example 3                                                                                                                     |
+|---------|-------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| conv 1  | ![C3D conv 1 kernel 1 static](results/c3d/c3d_conv1_f1_static.png )<br/>![C3D conv 1 kernel 1](results/c3d/c3d_conv1_f1.gif)  | ![C3D conv 1 kernel 4 static](results/c3d/c3d_conv1_f4_static.png) <br/>![C3D conv 1 kernel 4](results/c3d/c3d_conv1_f4.gif)  | ![C3D conv 1 kernel 5 static](results/c3d/c3d_conv1_f5_static.png) <br/>![C3D conv 1 kernel 5](results/c3d/c3d_conv1_f5.gif)  |
+| conv 2  | ![C3D conv 2 kernel 0 static](results/c3d/c3d_conv2_f0_static.png)<br/>![C3D conv 2 kernel 0](results/c3d/c3d_conv2_f0.gif)   | ![C3D conv 2 kernel 3 static](results/c3d/c3d_conv2_f3_static.png)<br/>![C3D conv 2 kernel 3](results/c3d/c3d_conv2_f3.gif)   | ![C3D conv 2 kernel 5 static](results/c3d/c3d_conv2_f5_static.png)<br/>![C3D conv 2 kernel 5](results/c3d/c3d_conv2_f5.gif)   |
+| conv 3b | ![C3D conv 3b kernel 1 static](results/c3d/c3d_conv3_f1_static.png)<br/>![C3D conv 3b kernel 1](results/c3d/c3d_conv3_f1.gif) | ![C3D conv 3b kernel 5 static](results/c3d/c3d_conv3_f5_static.png)<br/>![C3D conv 3b kernel 5](results/c3d/c3d_conv3_f5.gif) | ![C3D conv 3b kernel 8 static](results/c3d/c3d_conv3_f8_static.png)<br/>![C3D conv 3b kernel 8](results/c3d/c3d_conv3_f8.gif) |
+| conv 4b | ![C3D conv 4b kernel 1 static](results/c3d/c3d_conv4_f1_static.png)<br/>![C3D conv 4b kernel 1](results/c3d/c3d_conv4_f1.gif) | ![C3D conv 4b kernel 2 static](results/c3d/c3d_conv4_f2_static.png)<br/>![C3D conv 4b kernel 2](results/c3d/c3d_conv4_f2.gif) | ![C3D conv 4b kernel 5 static](results/c3d/c3d_conv4_f5_static.png)<br/>![C3D conv 4b kernel 5](results/c3d/c3d_conv4_f5.gif) |
+| conv 5b | ![C3D conv 5b kernel 0 static](results/c3d/c3d_conv5_f0_static.png)<br/>![C3D conv 5b kernel 0](results/c3d/c3d_conv5_f0.gif) | ![C3D conv 5b kernel 3 static](results/c3d/c3d_conv5_f3_static.png)<br/>![C3D conv 5b kernel 3](results/c3d/c3d_conv5_f3.gif) | ![C3D conv 5b kernel 8 static](results/c3d/c3d_conv5_f8_static.png)<br/>![C3D conv 5b kernel 8](results/c3d/c3d_conv5_f8.gif) |
+
+
+
+#### Visualization of VQ-VAE 
+
+| layer   | example 1                                                                                                                                  | example 2                                                                                                                               | example 3                                                                                                                               |
+|---------|--------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| conv 0  | ![VQ-VAE conv 0 kernel 0 static](results/vqvae/vqvae_conv0_f0_static.png )<br/>![C3D conv 0 kernel 0](results/vqvae/vqvae_conv0_f0.gif)    | ![C3D conv 0 kernel 2 static](results/vqvae/vqvae_conv0_f2_static.png) <br/>![C3D conv 0 kernel 2](results/vqvae/vqvae_conv0_f2.gif)    | ![C3D conv 0 kernel 3 static](results/vqvae/vqvae_conv0_f3_static.png) <br/>![C3D conv 0 kernel 3](results/vqvae/vqvae_conv0_f3.gif)    |
+| block 3 | ![VQ-VAE block 3 kernel 2 static](results/vqvae/vqvae_block3_f2_static.png)<br/>![C3D block 3 kernel 2](results/vqvae/vqvae_block3_f2.gif) | ![C3D block 3 kernel 3 static](results/vqvae/vqvae_block3_f3_static.png)<br/>![C3D block 3 kernel 3](results/vqvae/vqvae_block3_f3.gif) | ![C3D block 3 kernel 4 static](results/vqvae/vqvae_block3_f4_static.png)<br/>![C3D block 3 kernel 4](results/vqvae/vqvae_block3_f4.gif) |
