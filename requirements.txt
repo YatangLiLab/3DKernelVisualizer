@@ -1,0 +1,8 @@
+torch>=1.5.0
+torchvision
+kornia>=0.4.1
+tqdm
+numpy
+pillow
+decorator
+scikit-learn

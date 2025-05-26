@@ -1,0 +1,15 @@
+c3d:
+  ckpt_path: pretrained/c3d.pickle
+  layers: [conv5b, conv4b, conv3b, conv2, conv1]
+
+vqvae:
+  ckpt_path: pretrained/ucf101_stride4x4x4
+  layers: [encoder_res_stack_3_block_5_conv]
+
+flownet:
+  ckpt_path: pretrained/flownets_EPE1.951.pth.tar
+  layers: [conv6, conv5, conv4, conv3, conv2, conv1]
+
+i3d:
+  cfg_path: SlowFast/configs/Kinetics/c2/I3D_8x8_R50.yaml
+  layers: [s5_pathway0_res0_branch2_c, s4_pathway0_res0_branch2_c, s3_pathway0_res0_branch2_c, s2_pathway0_res0_branch2_c, s1_pathway0_stem_conv]

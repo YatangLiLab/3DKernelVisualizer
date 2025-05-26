@@ -1,0 +1,12 @@
+[submodule "modelzoo/VideoGPT"]
+	path = modelzoo/VideoGPT
+	url = https://github.com/wilson1yan/VideoGPT.git
+[submodule "modelzoo/C3D"]
+	path = modelzoo/C3D
+	url = https://github.com/DavideA/c3d-pytorch/
+[submodule "modelzoo/SlowFast"]
+	path = modelzoo/SlowFast
+	url = https://github.com/facebookresearch/SlowFast.git
+[submodule "modelzoo/FlowNet"]
+	path = modelzoo/FlowNet
+	url = https://github.com/ClementPinard/FlowNetPytorch.git
