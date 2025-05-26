@@ -57,7 +57,7 @@ All outputs are saved under the `--output_path` directory.
 > 💡 Tip: for best visualization, please assign `sigma`, `scale`, `max_value` in `run.py` for each kernel of deformation.
 
 
-## 🖼️ Results  
+## 📈 Results  
 Loading may take some time...
 
 
@@ -92,7 +92,7 @@ Loading may take some time...
 | block 3 | ![VQ-VAE block 3 kernel 2 static](results/vqvae/vqvae_block3_f2_static.png)<br/>![C3D block 3 kernel 2](results/vqvae/vqvae_block3_f2.gif) | ![C3D block 3 kernel 3 static](results/vqvae/vqvae_block3_f3_static.png)<br/>![C3D block 3 kernel 3](results/vqvae/vqvae_block3_f3.gif) | ![C3D block 3 kernel 4 static](results/vqvae/vqvae_block3_f4_static.png)<br/>![C3D block 3 kernel 4](results/vqvae/vqvae_block3_f4.gif) |
 
 
-## 📄 Citation
+## 📑 Citation
 
 If you find this code helpful, please cite our paper:
 ```BibTeX
@@ -110,7 +110,11 @@ If you find this code helpful, please cite our paper:
 ## 🙏 Acknowledgements
 
 This codebase draws inspiration and reuses components from [Lucent](https://github.com/greentfrapp/lucent).  
-We also acknowledge the use of pretrained weights from [SlowFast](https://github.com/facebookresearch/SlowFast), [VideoGPT](https://github.com/wilson1yan/VideoGPT), [C3D (PyTorch)](https://github.com/DavideA/c3d-pytorch)
+We also acknowledge the use of pretrained weights from 
+[SlowFast](https://github.com/facebookresearch/SlowFast), 
+[VideoGPT](https://github.com/wilson1yan/VideoGPT), 
+[C3D (PyTorch)](https://github.com/DavideA/c3d-pytorch), 
+[FlowNetPytorch](https://github.com/ClementPinard/FlowNetPytorch)
 
 ## 📜 License
 This project is under the Apache 2.0 License. See [LICENSE](LICENSE) for details.
