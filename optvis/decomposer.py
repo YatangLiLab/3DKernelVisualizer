@@ -92,18 +92,13 @@ def get_decomp(video, device='cuda:0', num_epochs=2000, verbose=False):
     return param, imagef
 
 
-def vis_decomp(param, sigma=1):
+def convert_to_polar(param, sigma=1):
     dx = gaussian_filter(param[1][0].cpu().detach().squeeze().numpy(), sigma)
     dy = gaussian_filter(param[1][1].cpu().squeeze().detach().numpy(), sigma)
 
-    dxx = []
-    dyy = []
-    for t in range(1, len(dx)):
-        dxx.append(dx[t] - dx[t-1])
-        dyy.append(dy[t] - dy[t-1])
-    dxx = gaussian_filter(np.array(dxx), sigma)
-    dyy = gaussian_filter(np.array(dyy), sigma)
-    magnitude, angle = cv2.cartToPolar(dxx, dyy)
+    deform_x = gaussian_filter(np.diff(dx), sigma)
+    deform_y = gaussian_filter(np.diff(dy), sigma)
+    magnitude, angle = cv2.cartToPolar(deform_x, deform_y)
     return magnitude, angle
 
 
@@ -128,7 +123,7 @@ def decompose(input_path=None, gif=None, sigma=1, scale=4, max_value=2):
     gif, video = load_gif(path=input_path, gif=gif)
 
     param, imagef = get_decomp(video, verbose=False)
-    magnitude, angle = vis_decomp(param, sigma=sigma)
+    magnitude, angle = convert_to_polar(param, sigma=sigma)
 
     rgb = flow_2_hsv(angle, magnitude, scale=scale, max_value=max_value)
     rgb.insert(0, (norm(param[0][0].cpu().detach().permute(1,2,0).numpy())*255).astype(np.uint8))

@@ -4,7 +4,7 @@ c3d:
 
 vqvae:
   ckpt_path: pretrained/ucf101_stride4x4x4
-  layers: [encoder_res_stack_3_block_5_conv]
+  layers: [encoder_res_stack_3_block_5_conv, encoder_convs_0_conv]
 
 flownet:
   ckpt_path: pretrained/flownets_EPE1.951.pth.tar
