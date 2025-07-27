@@ -96,14 +96,14 @@ Loading may take some time...
 
 If you find this code helpful, please cite our paper:
 ```BibTeX
-@article{li20253dkernelvis,
+@inproceedings{li20253dkernelvis,
       title={Feature Visualization in 3D Convolutional Neural Networks}, 
       author={Chunpeng Li and Ya-tang Li},
+      booktitle={Lecture Notes in Computer Science},
+      volume={15862},
+      pages={402--412},
       year={2025},
-      eprint={2505.07387},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2505.07387}, 
+      publisher={Springer},
 }
 ```
 
